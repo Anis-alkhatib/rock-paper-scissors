@@ -4,13 +4,13 @@ let j = 0;
 
 // Win condition (Bo5)
 function game () {
-  for (let s = 0; s <= 5; s++)  {
+  for (let s = 0; s < 5; s++)  {
     playRound();
-    if (s === 5 && i > j) {
+    if (s === 4 && i > j) {
       alert("hahaha get out you've lost");
-    } else if (s === 5 && j > i) {
+    } else if (s === 4 && j > i) {
       alert("Hell yeah! you've won!!");
-    } else if (s === 5 && j === i) {
+    } else if (s === 4 && j === i) {
       alert(`It's a Tie.. refresh the page to play again`);
     }
   }
