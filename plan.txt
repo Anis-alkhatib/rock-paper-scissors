@@ -1,0 +1,13 @@
+getComputerChoice. function that lets the comuter random a selection.
+
+player selection prompt (case insensitive)
+
+playRound. function that plays a round:
+define win condition by comparing player selection with computer selection
+add string to each result that will be played at the end of the round
+
+game. function that counts wins for both sides and displays score
+add a counter for player wins and another for computer wins
+add a round win counter
+set a game win limit
+add a string to show for when the round win counter reaches the game win limit
