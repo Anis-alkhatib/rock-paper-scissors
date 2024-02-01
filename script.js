@@ -15,7 +15,6 @@ const getComputerChoice = () => {
 }
 
 const playRound = (getComputerChoice(), playerChoice => {
-  playerChoice = 'rock';
   const computerChoice = getComputerChoice();
   // Draw
   if (computerChoice === playerChoice) {
@@ -32,6 +31,8 @@ const playRound = (getComputerChoice(), playerChoice => {
         ${computerChoice}.. ${computerChoice} beats ${playerChoice}.. You LOSE this round!! Go next...`
     }
 })
+
+
 
 
 
