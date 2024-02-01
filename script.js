@@ -1,7 +1,7 @@
 
 const getComputerChoice = () => {
   const npcChoice = Math.floor(Math.random() * 3);
-  switch(npcChoice) {
+  switch (npcChoice) {
     case 0:
       return 'rock';
       break;
@@ -14,6 +14,24 @@ const getComputerChoice = () => {
   }
 }
 
+const playRound = (getComputerChoice(), playerChoice => {
+  playerChoice = 'rock';
+  const computerChoice = getComputerChoice();
+  // Draw
+  if (computerChoice === playerChoice) {
+    return `You've picked ${playerChoice}, Computer has picked
+    ${computerChoice}.. it's a DRAW! Go next...`;
+  //player wins
+  } else if (computerChoice === 'rock' && playerChoice === 'paper'
+            || computerChoice === 'paper' && playerChoice === 'scissors'
+            || computerChoice === 'scissors' && playerChoice === 'rock') {
+      return `You've picked ${playerChoice}, Computer has picked
+      ${computerChoice}.. ${playerChoice} beats ${computerChoice}.. You WIN this round!! Go next...`
+    } else {
+        return `You've picked ${playerChoice}, Computer has picked
+        ${computerChoice}.. ${computerChoice} beats ${playerChoice}.. You LOSE this round!! Go next...`
+    }
+})
 
 
 
